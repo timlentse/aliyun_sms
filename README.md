@@ -10,15 +10,34 @@ gem 'aliyun_sms'
 
 And then execute:
 
-    $ bundle
+$ bundle
 
 Or install it yourself as:
 
-    $ gem install aliyun_sms
+$ gem install aliyun_sms
 
 ## Usage
 
-TODO: Write usage instructions here
+### 1.Configure first
+
+``` ruby
+AliyunSms.configure do |config|
+
+  config.access_key_id = 'testid'
+  config.access_key_secret = 'testsecret'
+
+# config.format = "XML"   ## optional(default 'JSON')
+# config.region_id = "cn-hangzhou"  ## optional
+
+end
+```
+
+### 2.Send a message
+
+``` ruby
+  args = {:phone=>"123456789",:sign_name=>"标签测试", :tpl_id=>"SMS_1650053", :params=>{"code":"1234"}}
+  AliyunSms.to args
+```
 
 ## Contributing
 
