@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["timlentse"]
   spec.email         = ["tinglenxan@gmail.com"]
 
-  spec.summary       = %q{Ruby SDK of Aliyun SMS service}
-  spec.description   = %q{This is a ruby gem help to use aliyun sms in ruby way.}
-  spec.homepage      = ""
+  spec.summary       = %q{Ruby SDK For Aliyun SMS Service}
+  spec.description   = %q{This is a ruby gem helps to use aliyun sms in ruby way.}
+  spec.homepage      = "https://github.com/timlentse/aliyun_sms"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
